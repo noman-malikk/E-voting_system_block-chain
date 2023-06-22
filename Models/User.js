@@ -30,7 +30,7 @@ const UserSchema = new Mongoose.Schema(
       required: true,
       unique: true,
       minLength: 10,
-      maxLength: 10,
+      maxLength: 11,
     },
     location: {
       type: String,
@@ -44,11 +44,11 @@ const UserSchema = new Mongoose.Schema(
       type: String,
       required: true,
     },
-    avatar: {
-      type: String,
-      default:
-        "https://firebasestorage.googleapis.com/v0/b/luxuryhub-3b0f6.appspot.com/o/Site%20Images%2Fprofile.png?alt=media&token=6f94d26d-315c-478b-9892-67fda99d2cd6",
-    },
+    // avatar: {
+    //   type: String,
+    //   default:
+    //     "https://firebasestorage.googleapis.com/v0/b/luxuryhub-3b0f6.appspot.com/o/Site%20Images%2Fprofile.png?alt=media&token=6f94d26d-315c-478b-9892-67fda99d2cd6",
+    // },
     isAdmin: {
       type: Boolean,
       default: 0,

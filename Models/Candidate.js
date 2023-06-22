@@ -22,6 +22,10 @@ const CandidateSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    electionName:{
+      type:String,
+      required:true
+    },
     join: {
       type: Number,
       required: true,

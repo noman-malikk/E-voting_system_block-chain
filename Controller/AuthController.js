@@ -18,6 +18,7 @@ import nodemailer from "nodemailer";
 //     }
 
 //User
+
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "Faces");
@@ -186,6 +187,7 @@ export const candidateRegister = {
       dob: req.body.dob,
       qualification: req.body.qualification,
       join: req.body.join,
+      electionName:req.body.electionName,
       location: req.body.location,
       description: req.body.description,
     });
@@ -206,6 +208,7 @@ export const candidates = {
       dob: req.body.dob,
       qualification: req.body.qualification,
       join: req.body.join,
+      electionName:req.body.electionName,
       location: req.body.location,
       description: req.body.description,
       password: req.body.password

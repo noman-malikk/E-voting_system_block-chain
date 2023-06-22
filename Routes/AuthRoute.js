@@ -21,7 +21,7 @@ router.get("/voting/elections", elections.voting);
 router.get("/result/elections", elections.result);
 router.get("/elections", elections.controller);
 router.get("/election/:id", elections.getElection);
-router.get("/election/delete/:id", elections.delete);
+router.post("/election/delete/:id", elections.delete);
 
 router.post("/candidate/register", candidates.register);
 router.post("/candidate/login", candidates.login);
