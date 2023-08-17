@@ -1,29 +1,25 @@
 {
-  "name": "server",
+  "name": "admin-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is a web application that allows users to vote for their preferred candidates in an election. The project uses MongoDB for database management and has three collections for candidates, elections, and users.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon main"
+    "frontend": "cd Client && npm run start",
+    "newFrontend": "cd Client && npm install && npm run start",
+    "backend": "cd server && nodemon main",
+    "newBackend": "cd server && npm install && nodemon main",
+    "dev": "concurrently \"cd server && nodemon main\" \"cd Client && npm run start\""
   },
-  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prnvbaraiya/admin-project.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-     "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^4.8.1",
-    "mongoose": "^6.5.1",
-    "multer": "^1.4.5-lts.1",
-    "nodemailer": "^6.7.7",
-    "nodemon": "^2.0.22",
-    "python-shell": "^3.0.1"
+  "bugs": {
+    "url": "https://github.com/prnvbaraiya/admin-project/issues"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  }
+  "homepage": "https://github.com/prnvbaraiya/admin-project#readme"
 }
